@@ -1,0 +1,54 @@
+body {
+  margin: 8px;
+  font-family: Inter;
+  word-spacing: -2px;
+  border: 2px solid rgba(0, 0, 0, 0.172);
+  min-height: 100vh;
+  border-radius: 20px 20px 0 0;
+}
+
+.header {
+  color: aliceblue;
+  background-color: rgb(208, 57, 57);
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 20px 20px 0 0;
+}
+
+.card {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin: 2.5rem;
+  max-width: 850px;
+}
+
+span {
+  margin-left: 2px;
+  margin-right: 3px;
+}
+
+a {
+  margin-left: 10px;
+  font-size: small;
+}
+
+.details {
+  margin: 2rem;
+}
+
+.img {
+  width: 210px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.dates {
+  display: block;
+  margin-top: 2rem;
+  font-weight: 700;
+}
