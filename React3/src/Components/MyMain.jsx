@@ -1,4 +1,6 @@
-export default function MyMain() {
+import marker from "/src/images/marker.png";
+
+/*export default function MyMain() {
   return (
     <main>
       <article className="card">
@@ -26,6 +28,57 @@ export default function MyMain() {
             meters (12,380 feet). Mount Fuji is the single most popular tourist
             site in Japan, for both Japanese and foreign tourists.
           </p>
+        </div>
+      </article>
+    </main>
+  );
+}*/
+
+/*export default function MyMain(props) {
+  console.log(props);
+  return (
+    <main>
+      <article className="card">
+        <div className="img">
+          <img className="img" src={props.img.src} alt={props.img.alt} />
+        </div>
+        <div className="details">
+          <header>
+            <img src={marker} alt="marker" width={11} />
+            <span>
+              {props.location} <a href={props.map}>View on Google Maps</a>{" "}
+            </span>
+          </header>
+          <h2>{props.title}</h2>
+          <span className="dates">{props.date}</span>
+          <p>{props.text}</p>
+        </div>
+      </article>
+    </main>
+  );
+}*/
+
+export default function MyMain({ key, props }) {
+  // props alone also could have worked but would have required props.props.img.src,
+  // or props.entry.img.src or somethuiing like this, i destructured it in the params thats why it was not needed
+  console.log(props);
+  return (
+    <main>
+      <article className="card">
+        <div className="img">
+          <img className="img" src={props.img?.src} alt={props.img?.alt} />
+        </div>
+        <div className="details">
+          <header>
+            <img src={marker} alt="marker" width={11} />
+            <span>
+              {props.country.toUpperCase()}{" "}
+              <a href={props.googleMapsLink}>View on Google Maps</a>{" "}
+            </span>
+          </header>
+          <h2>{props.title}</h2>
+          <span className="dates">{props.dates}</span>
+          <p>{props.text}</p>
         </div>
       </article>
     </main>
