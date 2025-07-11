@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: Inter;
+  margin: 10px;
+  border: solid 2px rgba(0, 0, 0, 0.205);
+  border-radius: 10px 10px 0 0;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.941);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 2rem;
+  border: solid 2px rgba(0, 0, 0, 0.083);
+  /*box-shadow: 0 3px 5px rgba(0, 0, 0, 0.649);*/
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+
+  border-radius: 10px 10px 0 0;
+  font-size: 1.8em;
+}
+
+.header span {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.272);
+  color: rgba(0, 0, 0, 0.864);
+}
+
+.logo {
+  width: 50px;
+}
+
+main {
+  padding: 70px 13px 10px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.add-form {
+  display: flex;
+  justify-content: center;
+  /* align-items: center;*/
+  height: 40px;
+  gap: 12px;
+}
+
+.add-form > input {
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  padding: 12px 13px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  flex-grow: 1;
+  min-width: 150px;
+  max-width: 450px;
+}
+
+.add-form > button {
+  font-family: Inter;
+  border-radius: 6px;
+  border: none;
+  background-color: black;
+  color: #d1d5db;
+  width: 150px;
+  font-size: 0.9rem;
+}
+
+.add-form > button::before {
+  content: "+";
+  margin-right: 5px;
+}

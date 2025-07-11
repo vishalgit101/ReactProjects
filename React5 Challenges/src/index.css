@@ -1,0 +1,90 @@
+.countIndicator {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;
+}
+
+.num {
+  margin: auto;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.897);
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.809);
+  color: aliceblue;
+  min-width: 100vh;
+}
+
+.button {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(67, 67, 67);
+  color: aliceblue;
+  font-size: larger;
+  font-weight: 700;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: -25px;
+  gap: 30px;
+}
+
+.container {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  height: 400px;
+  margin-top: 70px;
+  padding: 30px;
+}
+
+.sec3 {
+  color: aliceblue;
+  margin: auto;
+}
+
+.sec3-div {
+  margin: auto;
+  width: 800px;
+  min-height: 500px;
+  background-color: rgb(41, 160, 41);
+  border-radius: 20px;
+}
+
+.add-item {
+  width: 200px;
+  height: 50px;
+  font-size: 1.5rem;
+  color: aliceblue;
+  background-color: limegreen;
+  border-radius: 20px;
+  margin-top: 100px;
+}
+
+.sec3-div2 {
+  display: flex;
+  justify-content: center;
+}
+
+.item-div {
+  font-size: 2rem;
+}
+
+.ul-favt {
+  list-style: none;
+  margin-left: 300px;
+}
