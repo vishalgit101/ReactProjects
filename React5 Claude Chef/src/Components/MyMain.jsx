@@ -1,5 +1,5 @@
 import "/src/index.css";
-import React from "react";
+import React, { useRef } from "react";
 import { MyRecipe } from "./MyRecipe";
 import { MyIngredients } from "./MyIngredients";
 import { getRecipeFromMistral } from "../ai.js";
@@ -68,6 +68,22 @@ export default function MyMain() {
 
   // Now we are working with actual AI
   const [recipe, setRecipe] = React.useState("");
+  const recipeSection = useRef(null);
+
+  console.log(recipeSection);
+  // its null now but will become <div> where this recipeSection is passed in the ref, e:g ref={recipeSection}
+
+  React.useEffect(() => {
+    function scroll() {
+      // decpendencies array is empty so it will only run when the ap first laods and this is mounted but that time condtional is not satisfied
+      // so we will inc the recipe in the dependeincies array
+      if (recipe != "" && recipeSection.current != null) {
+        recipeSection.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    scroll();
+  }, [recipe]);
+
   async function aiResponse() {
     const res = await getRecipeFromMistral(ingredientListState);
     // this will trigger when the get recipe is clicked
@@ -83,6 +99,7 @@ export default function MyMain() {
           <button>Add Ingredient</button>
         </form>
         <MyIngredients
+          ref={recipeSection}
           ingredientsList={ingredientListState}
           handleClick={aiResponse}
         />
