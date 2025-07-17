@@ -28,7 +28,7 @@ export default function MyMain() {
   const [ingredientListState, setIngredientListState] = React.useState([
     "all the main spices",
     "pasta",
-    "ground beef",
+    "chicken",
     "tomato paste",
   ]); // returns an array; passed [] cos i'll be passing array in the setter
   // we could have passed values in the React.useState(["Oregano, Grapes"]) as we did in the count excercise
