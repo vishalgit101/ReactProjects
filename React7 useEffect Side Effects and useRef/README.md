@@ -1,1 +1,1 @@
-![Live window width Screenshot](./Project Screenshots\windowwidth.png)
+![Live window width Screenshot](./Project%20Screenshots\windowwidth.png)
