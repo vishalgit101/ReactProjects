@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(4, 25, 40);
+  min-height: 100vh;
+  color: aliceblue;
+  font-family: Inter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main {
+  background-color: whitesmoke;
+  max-width: 1000px;
+  max-height: 700px;
+  min-width: 600px;
+  min-height: 570px;
+  border-radius: 30px;
+}
+.main-div {
+  color: rgb(6, 4, 27);
+  text-align: center;
+  overflow: hidden;
+  padding: 20px;
+}
+h1 {
+  margin-top: 25px;
+  font-size: 3rem;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.711);
+  font-size: 1.3rem;
+}
+
+/*use grid for the buttons*/
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  justify-content: center;
+  gap: 30px;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  font-family: Inter;
+  font-size: larger;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.804);
+  border-radius: 10px 0px;
+  border: none;
+  box-shadow: 2px 2px 5px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.btn:active {
+  transform: scale(0.95);
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+  transition: all 0.05s ease-in-out;
+}
+
+.roll-div {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.841);
+}
+
+.roll-btn {
+  background-color: #5035ff;
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.roll-btn:hover {
+  background-color: #675af1;
+  transform: scale(1.05);
+}
+
+.roll-btn:active {
+  background-color: #3726cc;
+  transform: scale(1);
+}
