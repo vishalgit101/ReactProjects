@@ -1,10 +1,12 @@
 import React from "react";
 import MyDiceComp from "./MyDiceComp";
-
+import ReactConfetti from "react-confetti";
 export default function MyMain() {
   const arr = [];
 
   for (let i = 0; i < 10; i++) {
+    // on every render this might run each time which is a waste
+    //better thning would be to wrap this into a function and use the state with arrow function to run it
     let dice = { id: i, selected: false, number: i + 1 };
     arr.push(dice);
   }
@@ -100,6 +102,7 @@ export default function MyMain() {
             New Game
           </button>
         )}
+        {won && <ReactConfetti />}
         {won && <h2 className="win-message">🎉 You won! 🎉</h2>}
       </div>
     </main>
