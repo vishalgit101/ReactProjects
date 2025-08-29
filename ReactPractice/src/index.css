@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+.bodyClass {
+  background-color: #1c1917;
+  margin: 20px;
+  padding: 75px;
+}
+
+.mainClass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pad-container {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(2, 100px);
+  gap: 10px;
+}
+
+.buttonClass {
+  height: 100px;
+  width: 100px;
+  border: 3px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.1;
+}
+
+button.on {
+  /*meaning button has class name of .on*/
+  opacity: 1;
+}
+
+.padsHeading {
+  color: aliceblue;
+  text-align: center;
+}
+
+button.off {
+  opacity: 0.3;
+  transition: opacity 0.2s ease;
+}
